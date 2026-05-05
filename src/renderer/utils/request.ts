@@ -12,9 +12,7 @@ interface CustomAxiosRequestConfig extends InternalAxiosRequestConfig {
   noRetry?: boolean;
 }
 
-const baseURL = window.electron
-  ? `http://127.0.0.1:${setData?.musicApiPort}`
-  : import.meta.env.VITE_API;
+const baseURL = 'https://api-enhancedmusic-lqhy0o4ox-wanghaoran936-droids-projects.vercel.app';
 
 const request = axios.create({
   baseURL,
